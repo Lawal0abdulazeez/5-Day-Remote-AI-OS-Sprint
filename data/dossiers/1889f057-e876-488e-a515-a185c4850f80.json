@@ -1,0 +1,98 @@
+{
+  "dossier_id": "1889f057-e876-488e-a515-a185c4850f80",
+  "candidate_name": "Jordan Miller",
+  "email": null,
+  "phone": null,
+  "role_title": "Senior Distributed Systems Backend Engineer",
+  "job_id": "job-senior-backend",
+  "created_at": "2026-09-13T12:41:53.507493",
+  "overall_score": 28.2,
+  "recommendation": "Respectful Reject",
+  "scorecards": [
+    {
+      "criterion_name": "Required Technical Competencies",
+      "weight": 0.35,
+      "score": 25.0,
+      "status": "Missing",
+      "evidence_quotes": [
+        "\"Aspiring backend enthusiast with recent programming background in Python scripting\""
+      ],
+      "analysis": "Matched 1 verifiable skill citations out of 4 core requirements."
+    },
+    {
+      "criterion_name": "Tenure & Seniority Alignment",
+      "weight": 0.3,
+      "score": 35.0,
+      "status": "Missing",
+      "evidence_quotes": [],
+      "analysis": "Only 1.0 years detected. Falls significantly short of the 5 years requirement."
+    },
+    {
+      "criterion_name": "Project Impact & Scalability",
+      "weight": 0.2,
+      "score": 45.0,
+      "status": "Partial",
+      "evidence_quotes": [
+        "No clear quantified business metrics or performance scale numbers found."
+      ],
+      "analysis": "Identified 1 quantified production milestones with measurable business impact."
+    },
+    {
+      "criterion_name": "Preferred Skills & Tooling",
+      "weight": 0.15,
+      "score": 0.0,
+      "status": "Missing",
+      "evidence_quotes": [],
+      "analysis": "Aligned with 0 preferred technologies (FastAPI, Kafka, Kubernetes)."
+    }
+  ],
+  "strengths": [],
+  "gaps_and_concerns": [
+    "Missing explicit proof for mandatory competencies: Distributed Systems, PostgreSQL, Docker.",
+    "Tenure deficit: Candidate has 1.0 yrs experience vs required 5 yrs.",
+    "Required Technical Competencies: Matched 1 verifiable skill citations out of 4 core requirements.",
+    "Tenure & Seniority Alignment: Only 1.0 years detected. Falls significantly short of the 5 years requirement."
+  ],
+  "suggested_interview_probes": [
+    {
+      "category": "System Architecture",
+      "question": "Can you walk us through how you designed a high-throughput system utilizing Python, and what trade-offs you made?",
+      "what_to_look_for": "Deep understanding of failure domains, caching, latency budgets, and concurrency controls."
+    },
+    {
+      "category": "Competency Gap Probe",
+      "question": "We noticed limited direct project details regarding Missing explicit proof for mandatory competencies: Distributed Systems, PostgreSQL, Docker.. What has been your hands-on experience in that area?",
+      "what_to_look_for": "Honesty regarding skill boundaries, self-directed learning speed, and foundational knowledge."
+    },
+    {
+      "category": "Behavioral & Delivery",
+      "question": "Tell us about a technical disagreement you had with another senior engineer regarding system design. How was it resolved?",
+      "what_to_look_for": "Constructive communication, data-driven reasoning, and absence of defensive ego."
+    }
+  ],
+  "is_anonymized": false,
+  "security_audit": {
+    "has_injection_risk": true,
+    "flagged_patterns": [
+      "ignore\\s+(all\\s+)?(previous|prior)\\s+instructions?",
+      "system\\s+prompt\\s+(override|bypass)",
+      "you\\s+are\\s+now\\s+in\\s+.*mode",
+      "score\\s+(this\\s+candidate\\s+)?(100(\\.0)?|10\\/10|highest)",
+      "disregard\\s+(the\\s+)?(rubric|job\\s+description|criteria)",
+      "\\[\\s*system\\s*:\\s*.*\\]"
+    ],
+    "sanitized_length": 852,
+    "warning_message": "Adversarial prompt injection attempt detected and neutralized."
+  },
+  "approval_status": "Pending Review",
+  "recruiter_notes": null,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "years_experience_detected": 1.0,
+  "top_skills_detected": [
+    "Python"
+  ],
+  "companies_or_projects": [],
+  "processing_time_ms": 4.51,
+  "llm_provider": "mock"
+}

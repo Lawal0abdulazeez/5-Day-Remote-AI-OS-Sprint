@@ -1,0 +1,87 @@
+{
+  "dossier_id": "8e20ac9e-d6e5-405b-b77d-932e2ed246d7",
+  "candidate_name": "Empty / Corrupted File",
+  "email": null,
+  "phone": null,
+  "role_title": "Senior Distributed Systems Backend Engineer",
+  "job_id": "job-senior-backend",
+  "created_at": "2026-09-13T13:52:29.630336",
+  "overall_score": 28.5,
+  "recommendation": "Respectful Reject",
+  "scorecards": [
+    {
+      "criterion_name": "Required Technical Competencies",
+      "weight": 0.35,
+      "score": 0.0,
+      "status": "Missing",
+      "evidence_quotes": [],
+      "analysis": "Matched 0 verifiable skill citations out of 4 core requirements."
+    },
+    {
+      "criterion_name": "Tenure & Seniority Alignment",
+      "weight": 0.3,
+      "score": 65.0,
+      "status": "Partial",
+      "evidence_quotes": [],
+      "analysis": "Shows ~3.0 years of relevant experience, which is below the target 5 years."
+    },
+    {
+      "criterion_name": "Project Impact & Scalability",
+      "weight": 0.2,
+      "score": 45.0,
+      "status": "Partial",
+      "evidence_quotes": [
+        "No clear quantified business metrics or performance scale numbers found."
+      ],
+      "analysis": "Identified 1 quantified production milestones with measurable business impact."
+    },
+    {
+      "criterion_name": "Preferred Skills & Tooling",
+      "weight": 0.15,
+      "score": 0.0,
+      "status": "Missing",
+      "evidence_quotes": [],
+      "analysis": "Aligned with 0 preferred technologies (FastAPI, Kafka, Kubernetes)."
+    }
+  ],
+  "strengths": [],
+  "gaps_and_concerns": [
+    "Missing explicit proof for mandatory competencies: Python, Distributed Systems, PostgreSQL, Docker.",
+    "Tenure deficit: Candidate has 3.0 yrs experience vs required 5 yrs.",
+    "Required Technical Competencies: Matched 0 verifiable skill citations out of 4 core requirements.",
+    "Tenure & Seniority Alignment: Shows ~3.0 years of relevant experience, which is below the target 5 years."
+  ],
+  "suggested_interview_probes": [
+    {
+      "category": "System Architecture",
+      "question": "Can you walk us through how you designed a high-throughput system utilizing your core framework, and what trade-offs you made?",
+      "what_to_look_for": "Deep understanding of failure domains, caching, latency budgets, and concurrency controls."
+    },
+    {
+      "category": "Competency Gap Probe",
+      "question": "We noticed limited direct project details regarding Missing explicit proof for mandatory competencies: Python, Distributed Systems, PostgreSQL, Docker.. What has been your hands-on experience in that area?",
+      "what_to_look_for": "Honesty regarding skill boundaries, self-directed learning speed, and foundational knowledge."
+    },
+    {
+      "category": "Behavioral & Delivery",
+      "question": "Tell us about a technical disagreement you had with another senior engineer regarding system design. How was it resolved?",
+      "what_to_look_for": "Constructive communication, data-driven reasoning, and absence of defensive ego."
+    }
+  ],
+  "is_anonymized": false,
+  "security_audit": {
+    "has_injection_risk": false,
+    "flagged_patterns": [],
+    "sanitized_length": 35,
+    "warning_message": null
+  },
+  "approval_status": "Pending Review",
+  "recruiter_notes": null,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "years_experience_detected": 3.0,
+  "top_skills_detected": [],
+  "companies_or_projects": [],
+  "processing_time_ms": 0.63,
+  "llm_provider": "mock"
+}
