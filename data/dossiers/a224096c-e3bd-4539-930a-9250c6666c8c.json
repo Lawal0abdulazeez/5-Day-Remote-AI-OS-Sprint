@@ -1,0 +1,100 @@
+{
+  "dossier_id": "a224096c-e3bd-4539-930a-9250c6666c8c",
+  "candidate_name": "Max Buzz",
+  "email": null,
+  "phone": null,
+  "role_title": "Senior Distributed Systems Backend Engineer",
+  "job_id": "job-senior-backend",
+  "created_at": "2026-09-13T12:31:40.379163",
+  "overall_score": 69.5,
+  "recommendation": "Hold / Manual Review",
+  "scorecards": [
+    {
+      "criterion_name": "Required Technical Competencies",
+      "weight": 0.35,
+      "score": 100.0,
+      "status": "Exceeds",
+      "evidence_quotes": [],
+      "analysis": "Matched 0 verifiable skill citations out of 4 core requirements."
+    },
+    {
+      "criterion_name": "Tenure & Seniority Alignment",
+      "weight": 0.3,
+      "score": 35.0,
+      "status": "Missing",
+      "evidence_quotes": [
+        "\"Highly experienced engineering professional with broad exposure across the modern technology landscape\"",
+        "\"Attended weekly architecture planning and backlog refinement sessions\""
+      ],
+      "analysis": "Only 2.0 years detected. Falls significantly short of the 5 years requirement."
+    },
+    {
+      "criterion_name": "Project Impact & Scalability",
+      "weight": 0.2,
+      "score": 45.0,
+      "status": "Partial",
+      "evidence_quotes": [
+        "No clear quantified business metrics or performance scale numbers found."
+      ],
+      "analysis": "Identified 1 quantified production milestones with measurable business impact."
+    },
+    {
+      "criterion_name": "Preferred Skills & Tooling",
+      "weight": 0.15,
+      "score": 100.0,
+      "status": "Exceeds",
+      "evidence_quotes": [],
+      "analysis": "Aligned with 0 preferred technologies (FastAPI, Kafka, Kubernetes)."
+    }
+  ],
+  "strengths": [
+    "Strong stack overlap across core competencies: Python, Distributed Systems, PostgreSQL, Docker."
+  ],
+  "gaps_and_concerns": [
+    "Tenure deficit: Candidate has 2.0 yrs experience vs required 5 yrs.",
+    "Tenure & Seniority Alignment: Only 2.0 years detected. Falls significantly short of the 5 years requirement.",
+    "Project Impact & Scalability: Identified 1 quantified production milestones with measurable business impact."
+  ],
+  "suggested_interview_probes": [
+    {
+      "category": "System Architecture",
+      "question": "Can you walk us through how you designed a high-throughput system utilizing Python, and what trade-offs you made?",
+      "what_to_look_for": "Deep understanding of failure domains, caching, latency budgets, and concurrency controls."
+    },
+    {
+      "category": "Competency Gap Probe",
+      "question": "We noticed limited direct project details regarding Tenure deficit: Candidate has 2.0 yrs experience vs required 5 yrs.. What has been your hands-on experience in that area?",
+      "what_to_look_for": "Honesty regarding skill boundaries, self-directed learning speed, and foundational knowledge."
+    },
+    {
+      "category": "Behavioral & Delivery",
+      "question": "Tell us about a technical disagreement you had with another senior engineer regarding system design. How was it resolved?",
+      "what_to_look_for": "Constructive communication, data-driven reasoning, and absence of defensive ego."
+    }
+  ],
+  "is_anonymized": false,
+  "security_audit": {
+    "has_injection_risk": false,
+    "flagged_patterns": [],
+    "sanitized_length": 691,
+    "warning_message": null
+  },
+  "approval_status": "Pending Review",
+  "recruiter_notes": null,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "years_experience_detected": 2.0,
+  "top_skills_detected": [
+    "Python",
+    "Distributed Systems",
+    "PostgreSQL",
+    "Docker",
+    "FastAPI",
+    "Kafka",
+    "Kubernetes",
+    "System Design"
+  ],
+  "companies_or_projects": [],
+  "processing_time_ms": 2.13,
+  "llm_provider": "mock"
+}

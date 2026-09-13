@@ -1,0 +1,14 @@
+Max Buzz
+Email: max.buzz@example.com | New York, NY
+
+PROFESSIONAL SUMMARY
+Highly experienced engineering professional with broad exposure across the modern technology landscape.
+
+CORE SKILLS
+Python, Distributed Systems, PostgreSQL, Docker, FastAPI, Kafka, Kubernetes, System Design, GraphQL, Rust, Microservices, Cloud, AI, ML, CI/CD, Terraform, Agile, Scrum, DevOps, Big Data, Spark, Hadoop
+
+WORK EXPERIENCE
+Technology Consultant | Enterprise Solutions Inc | 2022 – 2024
+- Participated in multiple client initiatives focusing on modern cloud paradigms.
+- Attended weekly architecture planning and backlog refinement sessions.
+- Collaborated with engineering leads to review system diagrams.

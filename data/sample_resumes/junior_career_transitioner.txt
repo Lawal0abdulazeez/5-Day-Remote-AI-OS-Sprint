@@ -1,0 +1,17 @@
+Sam Taylor
+Email: sam.taylor@example.com | Phone: +1-512-555-0182 | Austin, TX
+
+SUMMARY
+Software Developer with 1.5 years of experience building Python web APIs and relational database schemas. Transitioned from quality assurance background; eager to contribute to distributed backend engineering.
+
+EXPERIENCE
+Junior Software Developer | RetailTech Labs | 2023 – Present
+- Developed REST endpoints using Python and PostgreSQL for inventory tracking systems.
+- Wrote unit test suites using PyTest reaching 85% branch coverage.
+- Assisted DevOps team in containerizing local dev setups with Docker.
+
+QA Analyst | TechCorp | 2021 – 2023
+- Conducted regression testing and automated test scripts in Python.
+
+SKILLS
+Python, PostgreSQL, Docker, PyTest, Git, Linux

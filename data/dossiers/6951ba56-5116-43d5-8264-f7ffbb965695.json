@@ -1,0 +1,99 @@
+{
+  "dossier_id": "6951ba56-5116-43d5-8264-f7ffbb965695",
+  "candidate_name": "Morgan Reed",
+  "email": null,
+  "phone": null,
+  "role_title": "Senior Distributed Systems Backend Engineer",
+  "job_id": "job-senior-backend",
+  "created_at": "2026-09-13T12:30:31.775502",
+  "overall_score": 50.0,
+  "recommendation": "Hold / Manual Review",
+  "scorecards": [
+    {
+      "criterion_name": "Required Technical Competencies",
+      "weight": 0.35,
+      "score": 25.0,
+      "status": "Missing",
+      "evidence_quotes": [
+        "\"Managed internal Docker and Kubernetes developer tooling portal adoption\""
+      ],
+      "analysis": "Matched 1 verifiable skill citations out of 4 core requirements."
+    },
+    {
+      "criterion_name": "Tenure & Seniority Alignment",
+      "weight": 0.3,
+      "score": 95.0,
+      "status": "Meets",
+      "evidence_quotes": [
+        "\"Lead Technical Product Manager with 5 years experience driving enterprise platform roadmaps, developer tooling, and API product strategy\"",
+        "\"Partnered with backend engineering to define SLOs and reduce platform churn by 22%\""
+      ],
+      "analysis": "Demonstrates 5.0+ years of professional experience, meeting the 5+ year role threshold."
+    },
+    {
+      "criterion_name": "Project Impact & Scalability",
+      "weight": 0.2,
+      "score": 45.0,
+      "status": "Partial",
+      "evidence_quotes": [
+        "No clear quantified business metrics or performance scale numbers found."
+      ],
+      "analysis": "Identified 1 quantified production milestones with measurable business impact."
+    },
+    {
+      "criterion_name": "Preferred Skills & Tooling",
+      "weight": 0.15,
+      "score": 25.0,
+      "status": "Missing",
+      "evidence_quotes": [
+        "\"Managed internal Docker and Kubernetes developer tooling portal adoption\""
+      ],
+      "analysis": "Aligned with 1 preferred technologies (FastAPI, Kafka, Kubernetes)."
+    }
+  ],
+  "strengths": [
+    "Substantial engineering tenure (5.0 yrs detected) satisfying senior role expectations."
+  ],
+  "gaps_and_concerns": [
+    "Missing explicit proof for mandatory competencies: Python, Distributed Systems, PostgreSQL.",
+    "Required Technical Competencies: Matched 1 verifiable skill citations out of 4 core requirements.",
+    "Project Impact & Scalability: Identified 1 quantified production milestones with measurable business impact.",
+    "Preferred Skills & Tooling: Aligned with 1 preferred technologies (FastAPI, Kafka, Kubernetes)."
+  ],
+  "suggested_interview_probes": [
+    {
+      "category": "System Architecture",
+      "question": "Can you walk us through how you designed a high-throughput system utilizing Docker, and what trade-offs you made?",
+      "what_to_look_for": "Deep understanding of failure domains, caching, latency budgets, and concurrency controls."
+    },
+    {
+      "category": "Competency Gap Probe",
+      "question": "We noticed limited direct project details regarding Missing explicit proof for mandatory competencies: Python, Distributed Systems, PostgreSQL.. What has been your hands-on experience in that area?",
+      "what_to_look_for": "Honesty regarding skill boundaries, self-directed learning speed, and foundational knowledge."
+    },
+    {
+      "category": "Behavioral & Delivery",
+      "question": "Tell us about a technical disagreement you had with another senior engineer regarding system design. How was it resolved?",
+      "what_to_look_for": "Constructive communication, data-driven reasoning, and absence of defensive ego."
+    }
+  ],
+  "is_anonymized": false,
+  "security_audit": {
+    "has_injection_risk": false,
+    "flagged_patterns": [],
+    "sanitized_length": 619,
+    "warning_message": null
+  },
+  "approval_status": "Pending Review",
+  "recruiter_notes": null,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "years_experience_detected": 5.0,
+  "top_skills_detected": [
+    "Docker",
+    "Kubernetes"
+  ],
+  "companies_or_projects": [],
+  "processing_time_ms": 45.24,
+  "llm_provider": "mock"
+}

@@ -1,0 +1,14 @@
+Morgan Reed
+morgan.reed@example.com | New York, NY
+
+SUMMARY
+Lead Technical Product Manager with 5 years experience driving enterprise platform roadmaps, developer tooling, and API product strategy.
+
+EXPERIENCE
+Group Product Manager | InfraScale SaaS | 2021 – Present
+- Led product roadmap for developer API platform serving 10,000+ API consumers.
+- Partnered with backend engineering to define SLOs and reduce platform churn by 22%.
+- Defined user stories, sprint backlogs, and go-to-market strategies.
+
+Technical PM | CloudStack | 2019 – 2021
+- Managed internal Docker and Kubernetes developer tooling portal adoption.

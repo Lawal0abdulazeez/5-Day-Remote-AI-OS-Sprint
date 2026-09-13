@@ -1,0 +1,15 @@
+Elena Rostova
+Email: elena.rostova@example.com | Seattle, WA
+
+EXECUTIVE SUMMARY
+Engineering Leader and Architect with 16+ years of experience leading engineering organizations of 60+ engineers. Deep hands-on foundational roots in distributed systems, high-scale Python microservices, and PostgreSQL database performance.
+
+EXPERIENCE
+VP of Engineering | CloudScale Technologies | 2018 – Present
+- Directed 4 engineering squads delivering enterprise SaaS infrastructure handling $80M ARR.
+- Built original Python and Go distributed ingestion pipeline processing 50,000 req/s.
+- Authored internal architectural standards for Docker containerization and Kubernetes orchestration.
+
+Director of Software Architecture | Apex Data | 2012 – 2018
+- Architected sharded PostgreSQL database cluster scaling past 2 billion rows with 99.99% uptime.
+- Mentored 15+ engineering leads across distributed systems paradigms.

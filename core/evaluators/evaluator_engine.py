@@ -204,27 +204,36 @@ class EvaluationEngine:
         )
 
     def _detect_years_experience(self, text: str) -> float:
-        # Match patterns like "7+ years", "5 years of experience", "2018 - 2024"
-        year_matches = re.findall(r'(\d{1,2})\+?\s*(?:years?|yrs?)(?:\s+of)?(?:\s+experience)?', text, re.IGNORECASE)
+        # Match patterns like "7+ years", "8+ years of expertise", "5 years of experience"
+        year_matches = re.findall(r'(\d{1,2})\+?\s*(?:years?|yrs?)(?:\s+of)?(?:\s+(?:experience|expertise|background|practice|engineering))?', text, re.IGNORECASE)
+        explicit_years = []
         if year_matches:
-            try:
-                numbers = [float(y) for y in year_matches if float(y) < 40]
-                if numbers:
-                    return max(numbers)
-            except ValueError:
-                pass
+            for y in year_matches:
+                try:
+                    val = float(y)
+                    if 1.0 <= val <= 45.0:
+                        explicit_years.append(val)
+                except ValueError:
+                    pass
+            if explicit_years:
+                return max(explicit_years)
 
-        # Check date ranges (e.g. 2017 - 2024)
+        # Check date ranges (e.g. 2017 - 2022, 2014 - 2017) and calculate cumulative tenure
         date_ranges = re.findall(r'\b(20[0-2]\d)\s*[-–—to]+\s*(20[0-2]\d|present|current)\b', text, re.IGNORECASE)
         if date_ranges:
-            total_years = 0
+            cumulative_years = 0
+            seen_intervals = []
             for start, end in date_ranges:
                 start_yr = int(start)
                 end_yr = 2026 if any(term in end.lower() for term in ["present", "current"]) else int(end)
-                diff = max(0, end_yr - start_yr)
-                total_years = max(total_years, diff)
-            if total_years > 0:
-                return float(total_years)
+                if end_yr > start_yr:
+                    # Avoid duplicate counting of identical or overlapping years
+                    interval = (start_yr, end_yr)
+                    if interval not in seen_intervals:
+                        seen_intervals.append(interval)
+                        cumulative_years += (end_yr - start_yr)
+            if cumulative_years > 0:
+                return float(cumulative_years)
 
         return 3.0  # Conservative baseline default if unspecified
 

@@ -1,0 +1,18 @@
+Sarah Jenkins
+sarah.j@example.com | Boston, MA
+
+SUMMARY
+Principal Backend Architect with 8+ years of expertise in Distributed Systems, high-availability Python services, and PostgreSQL database internals. Returning from planned 18-month family sabbatical. Deep practitioner in Kafka event streaming and System Design.
+
+EXPERIENCE
+Family Sabbatical & Independent Study | 2022 – 2024
+- Planned caregiving leave. Contributed to open-source Python distributed tools.
+
+Principal Software Engineer | FinScale Technologies | 2017 – 2022
+- Architected core banking ledger and event streaming platform using Python, Kafka, and PostgreSQL processing 30,000 req/s.
+- Reduced multi-region replication lag by 65% using custom CDC pipelines.
+- Standardized Docker and Kubernetes deployment topology across 18 teams.
+- Led distributed System Design reviews for platform infrastructure.
+
+Senior Backend Engineer | DataCore Systems | 2014 – 2017
+- Built high-volume ETL services in Python and PostgreSQL.

@@ -1,0 +1,113 @@
+{
+  "dossier_id": "647f1aa5-e914-4410-b329-e60377d7fb62",
+  "candidate_name": "Alex Chen",
+  "email": null,
+  "phone": null,
+  "role_title": "Senior Distributed Systems Backend Engineer",
+  "job_id": "job-senior-backend",
+  "created_at": "2026-09-13T12:30:31.662445",
+  "overall_score": 97.5,
+  "recommendation": "Strong Advance",
+  "scorecards": [
+    {
+      "criterion_name": "Required Technical Competencies",
+      "weight": 0.35,
+      "score": 100.0,
+      "status": "Exceeds",
+      "evidence_quotes": [
+        "\"latency backend platforms in Python and Go\"",
+        "\"Senior Distributed Systems Engineer with 7+ years of experience designing and scaling low\"",
+        "\"Storage & Caching: PostgreSQL, Redis, DynamoDB\"",
+        "\"Distributed Systems & Messaging: Kafka, RabbitMQ, Docker, Kubernetes, System Design\""
+      ],
+      "analysis": "Matched 4 verifiable skill citations out of 4 core requirements."
+    },
+    {
+      "criterion_name": "Tenure & Seniority Alignment",
+      "weight": 0.3,
+      "score": 95.0,
+      "status": "Exceeds",
+      "evidence_quotes": [
+        "\"Senior Distributed Systems Engineer with 7+ years of experience designing and scaling low\"",
+        "\"Staff Backend Engineer | HyperScale Fintech | 2021 – Present\""
+      ],
+      "analysis": "Demonstrates 7.0+ years of professional experience, meeting the 5+ year role threshold."
+    },
+    {
+      "criterion_name": "Project Impact & Scalability",
+      "weight": 0.2,
+      "score": 95.0,
+      "status": "Exceeds",
+      "evidence_quotes": [
+        "\"Proven track record of reducing p99 API latency by 45% and scaling transactional throughput to 25,000 req/s across Kubernetes clusters\"",
+        "\"Architected and scaled distributed real\"",
+        "\"Designed optimized PostgreSQL partitioning and indexing strategies handling over 400 million transaction records with sub\""
+      ],
+      "analysis": "Identified 3 quantified production milestones with measurable business impact."
+    },
+    {
+      "criterion_name": "Preferred Skills & Tooling",
+      "weight": 0.15,
+      "score": 100.0,
+      "status": "Exceeds",
+      "evidence_quotes": [
+        "\"Languages & Frameworks: Python, FastAPI, Go, AsyncIO, PyTest\"",
+        "\"Distributed Systems & Messaging: Kafka, RabbitMQ, Docker, Kubernetes, System Design\"",
+        "\"Proven track record of reducing p99 API latency by 45% and scaling transactional throughput to 25,000 req/s across Kubernetes clusters\"",
+        "\"Distributed Systems & Messaging: Kafka, RabbitMQ, Docker, Kubernetes, System Design\""
+      ],
+      "analysis": "Aligned with 4 preferred technologies (FastAPI, Kafka, Kubernetes)."
+    }
+  ],
+  "strengths": [
+    "Substantial engineering tenure (7.0 yrs detected) satisfying senior role expectations.",
+    "Strong stack overlap across core competencies: Python, Distributed Systems, PostgreSQL, Docker.",
+    "Required Technical Competencies: Verified with evidence quote: \"latency backend platforms in Python and Go\"",
+    "Tenure & Seniority Alignment: Verified with evidence quote: \"Senior Distributed Systems Engineer with 7+ years of experience designing and scaling low\""
+  ],
+  "gaps_and_concerns": [
+    "No critical disqualifiers detected; verified across all primary baseline criteria."
+  ],
+  "suggested_interview_probes": [
+    {
+      "category": "System Architecture",
+      "question": "Can you walk us through how you designed a high-throughput system utilizing Python, and what trade-offs you made?",
+      "what_to_look_for": "Deep understanding of failure domains, caching, latency budgets, and concurrency controls."
+    },
+    {
+      "category": "Competency Gap Probe",
+      "question": "We noticed limited direct project details regarding No critical disqualifiers detected; verified across all primary baseline criteria.. What has been your hands-on experience in that area?",
+      "what_to_look_for": "Honesty regarding skill boundaries, self-directed learning speed, and foundational knowledge."
+    },
+    {
+      "category": "Behavioral & Delivery",
+      "question": "Tell us about a technical disagreement you had with another senior engineer regarding system design. How was it resolved?",
+      "what_to_look_for": "Constructive communication, data-driven reasoning, and absence of defensive ego."
+    }
+  ],
+  "is_anonymized": false,
+  "security_audit": {
+    "has_injection_risk": false,
+    "flagged_patterns": [],
+    "sanitized_length": 1743,
+    "warning_message": null
+  },
+  "approval_status": "Pending Review",
+  "recruiter_notes": null,
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "years_experience_detected": 7.0,
+  "top_skills_detected": [
+    "Python",
+    "Distributed Systems",
+    "PostgreSQL",
+    "Docker",
+    "FastAPI",
+    "Kafka",
+    "Kubernetes",
+    "System Design"
+  ],
+  "companies_or_projects": [],
+  "processing_time_ms": 9.25,
+  "llm_provider": "mock"
+}

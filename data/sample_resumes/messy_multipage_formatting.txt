@@ -1,0 +1,15 @@
+David Kim
+david.kim@example.com | Chicago, IL
+
+=== SUMMARY ===
+Senior Software Engineer (6+ years experience). Specialist in Python, Distributed Systems, Docker containerization, and PostgreSQL optimizations.
+
+--- EXPERIENCE ---
+* Lead Backend Dev | LogiTech Global (2020 - 2024)
+  - Designed distributed event bus with Kafka and Python processing 15,000 req/s.
+  - Implemented Docker orchestration reducing cold start times by 35%.
+  - Tuned PostgreSQL query execution plans reducing p95 latency from 180ms to 25ms.
+
+* Software Engineer | MidWest FinTech (2018 - 2020)
+  - Developed REST microservices with Python and FastAPI.
+  - Managed database migrations and indexing.

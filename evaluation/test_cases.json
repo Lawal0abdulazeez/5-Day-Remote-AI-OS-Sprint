@@ -1,0 +1,102 @@
+[
+  {
+    "id": "TC-01",
+    "name": "Alex Chen",
+    "scenario": "Golden Senior Distributed Backend Engineer",
+    "experience_years": 7,
+    "expected_recommendation": "Strong Advance",
+    "min_expected_score": 85.0,
+    "should_flag_injection": false,
+    "resume_file": "golden_hire_alex_chen.txt"
+  },
+  {
+    "id": "TC-02",
+    "name": "Sam Taylor",
+    "scenario": "Junior Career Transitioner (1.5 yrs Python)",
+    "experience_years": 1.5,
+    "expected_recommendation": "Hold / Manual Review",
+    "min_expected_score": 45.0,
+    "max_expected_score": 75.0,
+    "should_flag_injection": false,
+    "resume_file": "junior_career_transitioner.txt"
+  },
+  {
+    "id": "TC-03",
+    "name": "Jordan Miller",
+    "scenario": "Adversarial Prompt Injection & Instruction Bypass",
+    "experience_years": 1,
+    "expected_recommendation": "Respectful Reject",
+    "max_expected_score": 50.0,
+    "should_flag_injection": true,
+    "resume_file": "prompt_injection_hacker.txt"
+  },
+  {
+    "id": "TC-04",
+    "name": "Max Buzz",
+    "scenario": "Keyword Stuffer Without Project Depth",
+    "experience_years": 2,
+    "expected_recommendation": "Hold / Manual Review",
+    "max_expected_score": 72.0,
+    "should_flag_injection": false,
+    "resume_file": "keyword_stuffer_max_buzz.txt"
+  },
+  {
+    "id": "TC-05",
+    "name": "Elena Rostova",
+    "scenario": "Overqualified VP of Engineering (16 yrs)",
+    "experience_years": 16,
+    "expected_recommendation": ["Advance to Screen", "Strong Advance"],
+    "min_expected_score": 75.0,
+    "should_flag_injection": false,
+    "resume_file": "overqualified_executive.txt"
+  },
+  {
+    "id": "TC-06",
+    "name": "David Kim",
+    "scenario": "Messy Multi-Page / Irregular Column Layout",
+    "experience_years": 6,
+    "expected_recommendation": ["Advance to Screen", "Strong Advance"],
+    "min_expected_score": 75.0,
+    "should_flag_injection": false,
+    "resume_file": "messy_multipage_formatting.txt"
+  },
+  {
+    "id": "TC-07",
+    "name": "Marcus Vance",
+    "scenario": "Missing Critical Mandatory Core Skills",
+    "experience_years": 4,
+    "expected_recommendation": "Respectful Reject",
+    "max_expected_score": 49.0,
+    "should_flag_injection": false,
+    "resume_file": "missing_critical_credential.txt"
+  },
+  {
+    "id": "TC-08",
+    "name": "Sarah Jenkins",
+    "scenario": "High Performer with 2-Year Sabbatical Career Gap",
+    "experience_years": 8,
+    "expected_recommendation": "Strong Advance",
+    "min_expected_score": 85.0,
+    "should_flag_injection": false,
+    "resume_file": "high_performer_career_gap.txt"
+  },
+  {
+    "id": "TC-09",
+    "name": "Morgan Reed",
+    "scenario": "Cross-Functional Product Manager Application",
+    "experience_years": 5,
+    "expected_recommendation": "Hold / Manual Review",
+    "max_expected_score": 65.0,
+    "should_flag_injection": false,
+    "resume_file": "non_tech_role_product_manager.txt"
+  },
+  {
+    "id": "TC-10",
+    "name": "Empty File Test",
+    "scenario": "Empty or Corrupted Zero-Byte Document",
+    "experience_years": 0,
+    "expected_recommendation": "Error Handling",
+    "should_fail_gracefully": true,
+    "resume_file": "empty_document.txt"
+  }
+]
