@@ -1,0 +1,26 @@
+Alex Chen
+Email: alex.chen@example.com | Phone: +1-415-555-0192 | San Francisco, CA
+LinkedIn: linkedin.com/in/alexchen-eng | GitHub: github.com/alexchen-dev
+
+PROFESSIONAL SUMMARY
+Senior Distributed Systems Engineer with 7+ years of experience designing and scaling low-latency backend platforms in Python and Go. Proven track record of reducing p99 API latency by 45% and scaling transactional throughput to 25,000 req/s across Kubernetes clusters.
+
+CORE COMPETENCIES
+Languages & Frameworks: Python, FastAPI, Go, AsyncIO, PyTest
+Storage & Caching: PostgreSQL, Redis, DynamoDB
+Distributed Systems & Messaging: Kafka, RabbitMQ, Docker, Kubernetes, System Design
+
+WORK EXPERIENCE
+Staff Backend Engineer | HyperScale Fintech | 2021 – Present
+- Architected and scaled distributed real-time ledger microservices processing $12M daily transactional volume.
+- Migrated legacy monolithic services to asynchronous FastAPI services running on Docker and Kubernetes, reducing p99 latency by 45% and infrastructure spend by 30%.
+- Designed optimized PostgreSQL partitioning and indexing strategies handling over 400 million transaction records with sub-15ms query times.
+- Led technical mentorship for a team of 6 engineers and standardized distributed tracing using OpenTelemetry.
+
+Senior Software Engineer | DataStream Cloud | 2018 – 2021
+- Engineered high-throughput event-streaming pipelines utilizing Kafka and Python, ingesting 8.5 billion log events daily.
+- Containerized internal services with Docker and implemented automated zero-downtime deployment pipelines.
+- Reduced database connection pooling overhead by 60% through custom AsyncIO connection managers.
+
+EDUCATION
+B.S. in Computer Science | University of California, Berkeley | 2014 – 2018

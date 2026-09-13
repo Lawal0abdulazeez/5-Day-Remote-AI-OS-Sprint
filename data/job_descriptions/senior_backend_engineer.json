@@ -1,0 +1,24 @@
+{
+  "id": "job-senior-backend",
+  "title": "Senior Distributed Systems Backend Engineer",
+  "department": "Platform Infrastructure",
+  "seniority": "Senior",
+  "minimum_years_experience": 5,
+  "required_skills": [
+    "Python",
+    "Distributed Systems",
+    "PostgreSQL",
+    "Docker"
+  ],
+  "preferred_skills": [
+    "FastAPI",
+    "Kafka",
+    "Kubernetes",
+    "System Design"
+  ],
+  "responsibilities": [
+    "Architect and scale distributed high-throughput microservices",
+    "Optimize database performance, indexing, and connection pools",
+    "Mentor mid-level engineers and conduct architecture design reviews"
+  ]
+}
