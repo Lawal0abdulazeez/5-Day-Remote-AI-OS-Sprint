@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentOps AI OS Mini | Candidate Screener & Evidence Dossier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="brand-container">
+      <span class="brand-badge">TALENT-OPS</span>
+      <div>
+        <h1 class="brand-title">Candidate Screener & Evidence Dossier OS</h1>
+        <div class="brand-subtitle">5-Day AI OS Sprint • Production Evaluation Engine</div>
+      </div>
+    </div>
+
+    <nav class="nav-tabs" role="tablist">
+      <button class="nav-tab active" id="tab-btn-workspace" onclick="switchTab('workspace')">Screening Workspace</button>
+      <button class="nav-tab" id="tab-btn-library" onclick="switchTab('library')">Dossier Library</button>
+      <button class="nav-tab" id="tab-btn-eval" onclick="switchTab('eval')">10-Test Benchmark</button>
+      <button class="nav-tab" id="tab-btn-audit" onclick="switchTab('audit')">Audit Logs</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Live Operational Stats Banner -->
+    <section class="stats-banner" aria-label="System Metrics">
+      <div class="stat-card">
+        <div class="stat-label">Total Screened</div>
+        <div class="stat-value" id="stat-total">0</div>
+        <div class="stat-subtext">Automated evaluations</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Average Score</div>
+        <div class="stat-value" id="stat-avg-score">--</div>
+        <div class="stat-subtext">Rubric calibrated (100 max)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Advance Rate</div>
+        <div class="stat-value" id="stat-advance-rate">--%</div>
+        <div class="stat-subtext">Passed to screen</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Prompt Injections Blocked</div>
+        <div class="stat-value" id="stat-injections" style="color: var(--accent-rose);">0</div>
+        <div class="stat-subtext">Zero security bypasses</div>
+      </div>
+    </section>
+
+    <!-- TAB 1: WORKSPACE -->
+    <section id="section-workspace" class="view-section active">
+      <div class="workspace-grid">
+        
+        <!-- Left: Upload & Input Console -->
+        <div class="card-panel">
+          <div class="panel-header">
+            <h2 class="panel-title">
+              <span>📥</span> Ingestion Console
+            </h2>
+            <span class="badge-recommendation badge-advance" id="engine-status-badge">Engine Ready</span>
+          </div>
+
+          <!-- Quick Test Samples -->
+          <div class="quick-samples-bar">
+            <span class="quick-label">⚡ One-Click Test Cases:</span>
+            <div class="quick-buttons">
+              <button class="btn-sample" id="btn-load-golden" onclick="loadSample('golden')">🌟 Golden Senior Hire</button>
+              <button class="btn-sample" id="btn-load-adversarial" onclick="loadSample('adversarial')">⚠️ Prompt Injection</button>
+              <button class="btn-sample" id="btn-load-junior" onclick="loadSample('junior')">🎓 Transitioner / Jr</button>
+              <button class="btn-sample" id="btn-load-keyword" onclick="loadSample('keyword')">📈 Keyword Stuffer</button>
+            </div>
+          </div>
+
+          <form id="screen-form" onsubmit="handleScreenSubmit(event)">
+            <!-- Target Job -->
+            <div class="form-group">
+              <label class="form-label" for="select-job">Target Role & Rubric</label>
+              <select class="form-select" id="select-job">
+                <option value="job-senior-backend">Senior Distributed Systems Backend Engineer</option>
+              </select>
+            </div>
+
+            <!-- Candidate Name (Optional) -->
+            <div class="form-group">
+              <label class="form-label" for="input-candidate-name">Candidate Name (Optional / Auto-detected)</label>
+              <input type="text" class="form-control" id="input-candidate-name" placeholder="e.g. Alex Chen">
+            </div>
+
+            <!-- File Dropzone -->
+            <div class="dropzone" id="dropzone" onclick="document.getElementById('file-input').click()">
+              <div class="dropzone-icon">📄</div>
+              <div class="dropzone-text" id="dropzone-filename">Drop PDF / DOCX / TXT resume here</div>
+              <div class="dropzone-sub">or click to browse local files</div>
+              <input type="file" id="file-input" style="display: none;" accept=".pdf,.docx,.doc,.txt,.md" onchange="handleFileSelect(event)">
+            </div>
+
+            <!-- Paste Resume Text -->
+            <div class="form-group">
+              <label class="form-label" for="textarea-resume">Or Paste Resume Text</label>
+              <textarea class="form-textarea" id="textarea-resume" placeholder="Paste full candidate resume text here..."></textarea>
+            </div>
+
+            <!-- Bias Redaction Toggle -->
+            <div class="toggle-container">
+              <div class="toggle-label-group">
+                <span class="toggle-title">Blind Screening (Redact PII)</span>
+                <span class="toggle-desc">Hides name, email, phone & gender identifiers</span>
+              </div>
+              <input type="checkbox" id="toggle-anonymize" style="width: 18px; height: 18px; cursor: pointer;">
+            </div>
+
+            <button type="submit" class="btn-primary" id="btn-run-screening">
+              <span id="btn-screening-text">Run AI OS Evaluation</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Candidate Evidence Dossier -->
+        <div class="card-panel" id="dossier-panel">
+          <div id="dossier-empty" class="dossier-empty">
+            <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;">📋</div>
+            <h3>No Candidate Evaluated Yet</h3>
+            <p>Upload a resume or click one of the quick test samples on the left to generate a comprehensive Evidence Dossier.</p>
+          </div>
+
+          <div id="dossier-content" style="display: none;">
+            <!-- Header Bar -->
+            <div class="dossier-header-bar">
+              <div class="candidate-title-group">
+                <h2 id="dossier-candidate-name">Candidate Name</h2>
+                <div class="candidate-meta">
+                  <span id="dossier-role-title">Role Title</span> •
+                  <span id="dossier-tenure">-- yrs detected</span> •
+                  <span id="dossier-latency">-- ms</span>
+                </div>
+              </div>
+
+              <div class="score-badge-cluster">
+                <div class="score-circle">
+                  <span class="score-num" id="dossier-score-num">--</span>
+                  <span class="score-max">/ 100</span>
+                </div>
+                <div class="badge-recommendation" id="dossier-rec-badge">--</div>
+              </div>
+            </div>
+
+            <!-- Security Alert (Conditional) -->
+            <div id="dossier-security-alert" class="alert-security" style="display: none;">
+              <span style="font-size: 1.2rem;">🛡️</span>
+              <div>
+                <strong>Prompt Injection Attempt Neutralized</strong>
+                <div id="dossier-security-detail" style="font-size: 0.8rem; opacity: 0.9;"></div>
+              </div>
+            </div>
+
+            <!-- Scorecard Breakdown -->
+            <h3 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem; color: var(--text-muted); text-transform: uppercase;">
+              📊 Criteria Evidence Scorecard
+            </h3>
+            <div class="criteria-list" id="dossier-criteria-container">
+              <!-- Dynamically populated -->
+            </div>
+
+            <!-- Strengths and Gaps -->
+            <div class="breakdown-row">
+              <div class="box-strengths">
+                <div class="box-title"><span>🌟</span> Key Strengths</div>
+                <ul class="bullet-list" id="dossier-strengths"></ul>
+              </div>
+              <div class="box-gaps">
+                <div class="box-title"><span>⚠️</span> Gaps & Potential Risks</div>
+                <ul class="bullet-list" id="dossier-gaps"></ul>
+              </div>
+            </div>
+
+            <!-- Interview Probes -->
+            <div class="box-probes">
+              <div class="box-title" style="color: var(--accent-cyan);"><span>🎯</span> Role-Specific Interview Probes</div>
+              <div id="dossier-probes-container">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+            <!-- Human Approval & ATS Dispatch Gate -->
+            <div class="approval-panel">
+              <div class="approval-header">
+                <div>
+                  <div class="approval-title">Human-in-the-Loop Sign-Off Gate</div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted);" id="dossier-approval-status-label">
+                    Status: Pending Recruiter Review
+                  </div>
+                </div>
+                <div class="approval-actions">
+                  <button class="btn-approve" id="btn-approve-screen" onclick="submitApproval('approve')">
+                    ✓ Approve for Screen
+                  </button>
+                  <button class="btn-reject" id="btn-reject-screen" onclick="submitApproval('reject')">
+                    ✕ Reject Candidate
+                  </button>
+                  <button class="btn-export" id="btn-export-greenhouse" onclick="exportDossier('greenhouse')">
+                    Export ATS (JSON)
+                  </button>
+                  <button class="btn-export" id="btn-export-md" onclick="exportDossier('markdown')">
+                    Download Summary
+                  </button>
+                </div>
+              </div>
+
+              <!-- Recruiter Notes input -->
+              <div style="display: flex; gap: 0.5rem;">
+                <input type="text" class="form-control" id="input-recruiter-notes" placeholder="Add recruiter review notes or interview focus instructions...">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TAB 2: DOSSIER LIBRARY -->
+    <section id="section-library" class="view-section">
+      <div class="card-panel">
+        <div class="panel-header">
+          <h2 class="panel-title">📚 Dossier Library & ATS Dispatch Status</h2>
+          <button class="btn-sample" onclick="loadDossiersList()">↻ Refresh</button>
+        </div>
+        <div class="table-container">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Candidate</th>
+                <th>Target Role</th>
+                <th>Score</th>
+                <th>Recommendation</th>
+                <th>Approval Status</th>
+                <th>Security Flag</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="library-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: 10-TEST BENCHMARK -->
+    <section id="section-eval" class="view-section">
+      <div class="card-panel">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">🧪 10-Test Case Evaluation Benchmark</h2>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">
+              Runs all 10 curated representative, edge, and adversarial scenarios to verify system accuracy, hallucination resistance, and prompt injection defense.
+            </div>
+          </div>
+          <button class="btn-primary" id="btn-run-all-evals" onclick="runEvaluationBenchmark()" style="width: auto;">
+            <span>▶ Run Full Test Benchmark</span>
+          </button>
+        </div>
+
+        <div id="benchmark-progress" style="display: none; padding: 1rem 0; font-size: 0.85rem; color: var(--accent-cyan);">
+          Running evaluation harness across all 10 test cases... please wait.
+        </div>
+
+        <div class="table-container">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Test Case</th>
+                <th>Profile Description</th>
+                <th>Expected Outcome</th>
+                <th>Actual Score</th>
+                <th>Actual Recommendation</th>
+                <th>Security Check</th>
+                <th>Benchmark Status</th>
+              </tr>
+            </thead>
+            <tbody id="benchmark-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: AUDIT TRAIL -->
+    <section id="section-audit" class="view-section">
+      <div class="card-panel">
+        <div class="panel-header">
+          <h2 class="panel-title">🛡️ Append-Only Security & Approval Audit Trail</h2>
+          <button class="btn-sample" onclick="loadAuditLogs()">↻ Refresh</button>
+        </div>
+        <div class="table-container">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Timestamp (UTC)</th>
+                <th>Event Type</th>
+                <th>Dossier ID</th>
+                <th>Event Details</th>
+              </tr>
+            </thead>
+            <tbody id="audit-table-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
