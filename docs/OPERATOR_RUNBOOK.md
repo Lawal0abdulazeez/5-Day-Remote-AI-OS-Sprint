@@ -1,5 +1,5 @@
 # Operator Runbook & Setup Guide
-## TalentOps AI OS Mini: Non-Developer & Operator Manual
+## TalentOps AI OS: Non-Developer & Operator Manual
 
 ---
 
@@ -17,7 +17,7 @@ git clone https://github.com/Lawal0abdulazeez/5-Day-Remote-AI-OS-Sprint.git
 cd 5-Day-Remote-AI-OS-Sprint
 ```
 
-### Step 2: Install Lean Dependencies
+### Step 2: Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -41,7 +41,7 @@ Open your browser and navigate to:
 ### 1. Ingesting & Evaluating Resumes
 1. Select the **Target Role & Rubric** from the dropdown.
 2. Either:
-   - Click one of the four **One-Click Test Cases** (`🌟 Golden Senior Hire`, `⚠️ Prompt Injection`, `🎓 Transitioner / Jr`, `📈 Keyword Stuffer`).
+   - Click one of the four **One-Click Test Profiles** (`🌟 Golden Senior Hire`, `⚠️ Prompt Injection`, `🎓 Transitioner / Jr`, `📈 Keyword Stuffer`).
    - Or drag & drop any local **PDF**, **DOCX**, or **TXT** resume into the upload zone.
 3. *(Optional)* Toggle **"Blind Screening (Redact PII)"** to anonymize candidate name, email, phone, and gender-identifying information for unbiased merit evaluation.
 4. Click **"Run AI OS Evaluation"**. The candidate evidence dossier will generate in < 15 milliseconds.
@@ -96,7 +96,7 @@ python scripts/run_cli.py --resume data/sample_resumes/golden_hire_alex_chen.txt
 
 ---
 
-## 5. Live Cloud Deployment (Optional)
+## 5. Live Cloud Deployment
 
 To deploy live on Render, Railway, or Heroku:
 - **Build Command**: `pip install -r requirements.txt`

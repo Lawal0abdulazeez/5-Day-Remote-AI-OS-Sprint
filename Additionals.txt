@@ -1,4 +1,0 @@
-Github Repo : https://github.com/Lawal0abdulazeez/5-Day-Remote-AI-OS-Sprint.git
-
-Note : Lets us psh to github as frequently as some milestones are achieved, with good commit message
-
